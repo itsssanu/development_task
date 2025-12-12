@@ -1,12 +1,104 @@
-# React + Vite
+# Development Task - React UI Components
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 Overview
 
-Currently, two official plugins are available:
+This is a 2-day development assessment focused on building a mobile-responsive and accessible UI based on the provided Figma design. The project emphasizes component-based architecture, clean code practices, and user-friendly interactions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Objective
 
-## Expanding the ESLint configuration
+Build a pixel-perfect, mobile-responsive UI in React that matches the Figma design specifications. All sections must be developed as separate, reusable components with proper state management and validation logic.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📁 Project Structure
+
+```
+DEVELOPMENT_TASK/
+├── node_modules/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── UI/
+│   │   ├── CarouselSection.jsx
+│   │   ├── ContactForm.jsx
+│   │   ├── CTASection.jsx
+│   │   ├── FAQSection.jsx
+│   │   ├── FeaturesSection.jsx
+│   │   ├── Footer.jsx
+│   │   ├── HeroSection.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── PublicationSection.jsx
+│   │   ├── ShapeFutureSection.jsx
+│   │   └── WhyJoinSection.jsx
+│   ├── data/
+│   ├── utilities/
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .gitattributes
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+└── README.md
+```
+
+## 🛠️ Tech Stack
+
+- **Framework:** React.js
+- **Styling:** TailwindCSS
+- **Carousel/Slider:** SwiperJS (via npm)
+- **Build Tool:** Vite (recommended)
+- **State Management:** React Hooks (useState, useEffect)
+
+## 📦 Installation & Setup
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation Steps
+
+1. **Clone the repository**
+```bash
+git clone <repository-url>
+cd DEVELOPMENT_TASK
+```
+
+2. **Install dependencies**
+```bash
+npm install
+```
+
+3. **Start development server**
+```bash
+npm run dev
+```
+
+4. **Build for production**
+```bash
+npm run build
+```
+
+5. **Preview production build**
+```bash
+npm run preview
+```
+
+## 📱 Responsive Design
+
+The application must be fully responsive and tested on:
+- Mobile devices (320px - 767px)
+- Tablets (768px - 1023px)
+- Desktop (1024px and above)
+
+## ♿ Accessibility Requirements
+
+- Semantic HTML elements
+- Proper ARIA labels and roles
+- Keyboard navigation support
+- Focus indicators for interactive elements
+- Alt text for images
+- Color contrast compliance (WCAG AA)
