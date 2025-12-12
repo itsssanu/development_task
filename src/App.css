@@ -1,8 +1,8 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  max-width: none; 
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
@@ -39,4 +39,46 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Hide scrollbar visually */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;  
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; 
+}
+
+/* Smooth mobile momentum scrolling */
+.tab-scroll {
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+}
+
+/* Scroll snapping for tabs */
+.snap-start {
+  scroll-snap-align: start;
+}
+
+.snap-mandatory {
+  scroll-snap-type: x mandatory;
+}
+
+/* Extra padding for small screens */
+@media (max-width: 1024px) {
+  .tab-scroll {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
