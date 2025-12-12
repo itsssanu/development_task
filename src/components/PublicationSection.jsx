@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export const PublicationSection = () => {
-  const [activeTab, setActiveTab] = useState('awards');
-
   const tabs = [
     { id: 'publication', label: 'Publication Details' },
     { id: 'awards', label: 'Awards And Achievements' },
     { id: 'workshops', label: 'Workshops / Seminars' },
     { id: 'experience', label: 'Work Experience' }
   ];
+
+  const [activeTab, setActiveTab] = useState(tabs[0].id);
 
   const tabContent = {
     publication: {
